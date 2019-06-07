@@ -1,4 +1,4 @@
-// copy/paste from https://github.com/montyr75/hangman/blob/master/lib/src/hangman.dart
+//https://github.com/SowatKheang
 
 import 'dart:async';
 
@@ -34,16 +34,12 @@ class HangmanGame {
   void newGame() {
     // shuffle the word list into a random order
     wordList.shuffle();
-
     // break the first word from the shuffled list into a list of letters
     _wordToGuess = wordList.first.split('');
-
     // reset the wrong guess count
     _wrongGuesses = 0;
-
     // clear the set of guessed letters
     lettersGuessed.clear();
-
     // declare the change (new word)
     _onChange.add(wordForDisplay);
   }

@@ -1,4 +1,4 @@
-//github.com/sowatkheang
+//https://github.com/SowatKheang
 
 
 import 'package:flutter/material.dart';
@@ -36,7 +36,6 @@ class _HangmanAppState extends State<HangmanApp> {
   void initState() {
     super.initState();
 
-   // _engine = HangmanGame(wordList);
    _engine = HangmanGame(listKeys);
   }
 
